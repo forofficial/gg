@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mobile Landing Page</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+  <div data-role="header">
+    <h1>About</h1>
+  </div>
+
+  <div data-role="content">
+    <h2>Welcome to our website!</h2>
+    <p>This is the about page.</p>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2023 My Website</h4>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact</h1>
+  </div>
+
+  <div data-role="content">
+    <h2>Contact Us</h2>
+    <p>Please fill out the form below to get in touch:</p>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="message">Message:</label>
+      <textarea id="message"></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2023 My Website</h4>
+  </div>
+</div>
+
+<!-- Profile Page -->
+<div data-role="page" id="profile">
+  <div data-role="header">
+    <h1>Profile</h1>
+  </div>
+
+  <div data-role="content">
+    <h2>Login</h2>
+
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <div data-role="footer">
+    <h4>&copy; 2023 My Website</h4>
+  </div>
+</div>
+
+<script>
+  // Initialize jQuery Mobile
+  $(document).on("mobileinit", function() {
+    $.mobile.defaultPageTransition = "slide";
+  });
+
+  // Initialize pages
+  $(document).on("pagecreate", function() {
+    // About page
+    $(document).on("pagebeforeshow", "#about", function() {
+      // Add any additional logic or functionality for the about page
+    });
+
+    // Contact page
+    $(document).on("pagebeforeshow", "#contact", function() {
+      // Add any additional logic or functionality for the contact page
+    });
+
+    // Profile page
+    $(document).on("pagebeforeshow", "#profile", function() {
+      // Add any additional logic or functionality for the profile page
+    });
+  });
+</script>
+
+</body>
+</html>
