@@ -1,0 +1,15 @@
+body {
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}

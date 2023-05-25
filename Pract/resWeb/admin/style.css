@@ -1,0 +1,12 @@
+body {
+  padding-top: 60px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+#attendanceChart,
+#subjectChart {
+  margin-top: 20px;
+}
